@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import Confetti from "react-confetti";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   const [marks, setMarks] = useState(0);
@@ -853,6 +854,7 @@ At least one valid membership in IEEE/ACM/CSI/ISTE etc. (certificate required) =
           </div>
         </div>
       )}
+      <Analytics/>
     </div>
   );
 }
